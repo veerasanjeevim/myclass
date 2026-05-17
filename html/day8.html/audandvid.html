@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="multimedia web page">
+    <meta name="keywords" content="htmlwebpage">
+    <meta name="author" content="veerasanjeevi">
+
+    <meta name="og:title" content="myplaylist">
+
+    <meta name="og:description"  content="welcome to my playlist">
+
+    <meta name="og:image" content="myclass/html/assets/sp1.webp"> 
+
+
+    <meta name="og:url" content="http://127.0.0.1:5500/day8.html">
+    
+    <title>my website</title>
+</head>
+<body>
+    <header>
+        <h1>MY FAV LIST</h1>
+        <Nav>
+            <a href="#aud">Audio</a>
+            <a href="#vid">video</a>
+            <a href="#ifr">youtube</a>
+        </Nav>
+    </header>
+    <center>
+    <section>
+        <h1>Music 1 <p>click here</p></h1>
+        <div>
+            <audio controls id="aud" autoplay muted loop >
+                <source src="../html/assets/a1.mp3">
+            </audio>
+        </div>
+    </section>
+    <br>
+     <section>
+        <h1>Music 2 <p>click here</p></h1>
+        <div>
+            <audio controls id="aud" autoplay muted loop >
+                <source src="../html/assets/a2.mp3">
+            </audio>
+        </div>
+    </section>
+    <section>
+        <h1> VIDEO 1 <p>click here</p></h1>
+        <div>
+            <video controls id="vid" poster="nature video" loop>
+                <source src="../html/assets/v1.mp4">
+            </video>
+        </div>
+    </section>
+        <section>
+        <h1> VIDEO 2 <p>click here</p></h1>
+        <div>
+            <video controls id="vid" poster="nature video" loop>
+                <source src="../html/assets/v2.mp4">
+            </video>
+        </div>
+    </section>
+      
+    <section>
+        <h1>iframed you tube videos</h1>
+        <div id="ifr">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WeA7edXsU40?si=p8Ujhy2T-WAotQpY" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    </center>
+    <footer>
+        <p>myplaylist@gmail.com</p>
+        <p>mypplay@spotify</p>
+        <p>myplay@cc2006</p>
+    </footer>
+</body>
+</html>
