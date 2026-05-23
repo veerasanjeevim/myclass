@@ -1,0 +1,24 @@
+*{{
+
+}}
+header nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.parent {
+    display: flex;
+    background-color: black;
+   
+   
+}
+.child{
+    overflow: auto;
+   
+}
+footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
