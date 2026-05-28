@@ -1,0 +1,30 @@
+*{
+    padding:opx;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.parent{
+    background-color: rgb(193, 185, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 300px;
+    width: 1300px;
+    margin-left: 50px;
+    gap: 10px;
+    border-radius: 30px;
+}
+.child2{
+    margin-left: 30px;
+    margin-bottom: 130px;
+}
+button{
+    co
+}

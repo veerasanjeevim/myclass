@@ -1,0 +1,27 @@
+*{
+    padding: opx;
+    margin:0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.c1{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    height: 150px;
+    width: 1300px;
+    border-radius: 30px;
+   
+}
+.c2{
+    display: flex;
+    justify-content: space-between;
+     margin-left: 200px;
+     gap: 250px;
+}
+

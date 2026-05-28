@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.parent{
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    
+}
+.child{
+    background-color: aliceblue;
+    border-radius: 40px;
+    height: 350px;
+    width: 350px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
