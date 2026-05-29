@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.m1{
+    background-color: black;
+    height: 100px;
+    width: 1500px;
+    display: flex;
+    gap: 10px;
+    align-items: center;.
+    
+}
+.m2{
+    background-color: azure;
+    height: 70px;
+    width: 1500px;
+     display: grid;
+    align-items: center;
+    justify-items: center;
+   
+    
+}
+.m2 button{
+    height: 40px;
+    width: 70px;
+  
+
+     
+   
+}
+.m2 :hover{
+    background-color: brown;
+    color: black; 
+
+    transition: 2s;
+   
+}

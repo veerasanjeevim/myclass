@@ -1,0 +1,34 @@
+*{
+    padding: opx;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow: hidden;
+}
+.mn{
+    background-color: black;
+    height: 270px;
+    width: 250px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 40px;
+}
+.m1{
+    color: aliceblue;
+    margin-left: 50px;
+}
+.m{
+    border-radius: 60px;
+}
+.mt{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
