@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+.m1{
+    background-color: rgb(151, 102, 42);
+    width: 200px;
+   margin-left: 500px;
+   margin-top: 300px;
+    
+}
+.m2{
+    position: relative;
+   
+}
+.m3{
+    position: absolute;
+    background-color:brown ;
+     transform: rotate(80deg);
+    
+}
