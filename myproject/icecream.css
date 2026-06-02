@@ -1,0 +1,144 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    display: flex;
+    gap: 20px;
+   justify-content: space-between;
+   border: 1px solid black;
+   padding: 10px;
+}
+.nav1{
+    display: flex;
+    margin-left: 20px;
+}
+.nav3{
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-left: 150px;
+    text-decoration: none;
+   
+}
+.nav3 button{
+    height: 30px;
+    width: 110px;
+    border-radius: 30px;
+    
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.flav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:normal;
+
+   
+    
+}
+.flav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-bottom: 1px solid grey;
+}
+.mflav{
+    background-color: bisque;
+    height: 400px;
+    width: 250px;
+}
+.n1{
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(225, 206, 222, 0.955);
+    width: 230px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-radius: 25px;
+}
+.n1 button{
+    margin-top: 20px;
+    gap: 20px;
+   background-color: black;
+   color: rgb(247, 247, 247);
+   height: 25px;
+   width: 80px;
+
+}
+.n{
+    background-color: rgba(255, 249, 243, 0.94);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.l{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.g{
+    
+    background-color: rgba(215, 211, 211, 0.911);
+    height:100px;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-right: 3px solid black;
+}
+.m11{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(73, 136, 136, 0.705);
+}
+.t{
+    
+   
+   
+    display: flex;
+    flex-direction: column;
+
+    
+    
+    
+}
+.main1{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(209, 209, 227, 0.734);
+    height: 250px;
+    padding: 80px;
+    gap: 100px;
+}
+.n1:hover{
+    transform: scale(1.1);
+    
+}
+.nav3 a:hover{
+    background-color: rgb(112, 117, 221);
+}
+.nav3 button:hover{
+    transform: scale(1.2);
+}
