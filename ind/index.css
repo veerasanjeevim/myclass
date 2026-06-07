@@ -1,0 +1,26 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.html{
+    scroll-behavior: smooth;
+}
+.body{
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar{
+    display: flex;
+   
+    padding: 25px;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    margin-right: 90px;
+}

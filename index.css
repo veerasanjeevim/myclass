@@ -1,0 +1,50 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.html{
+    scroll-behavior: smooth;
+}
+.body{
+    overflow-x: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar{
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    margin-right: 90px;
+}
+.cards{
+    padding: 20px;
+    background-color: rgba(239, 236, 236, 0.925);
+    height: 250px;
+    width: 1500px;
+    border-radius: 10px;
+    display: flex;
+    gap: 5opx;
+    justify-content: space-around;
+    align-items: center;
+    
+   
+    
+}
+.imh:hover{
+    transform: scale(1.2);
+}
+.mar{
+    border-bottom: 2px solid rgb(194, 175, 175);
+    opacity: 10px;
+}
+.task{
+    background-color: rgb(179, 160, 136);
+}
+
