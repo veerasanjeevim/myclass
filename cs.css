@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.cs{
+    background-color: rgba(165, 42, 42, 0.781);
+    border: 1px solid black;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}

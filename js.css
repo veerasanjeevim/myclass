@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.d{
+    background-color: burlywood;
+    padding: 5px;
+    border: 1px solid black;
+   
+}

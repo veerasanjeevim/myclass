@@ -10,41 +10,43 @@
     overflow-x: hidden;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.navbar{
-    display: flex;
-    padding: 25px;
-    justify-content: space-between;
-    color: rgb(0, 0, 0);
-}
-.nav2{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 100px;
-    margin-right: 90px;
-}
-.cards{
-    padding: 20px;
-    background-color: rgba(239, 236, 236, 0.925);
-    height: 250px;
-    width: 1500px;
-    border-radius: 10px;
-    display: flex;
-    gap: 5opx;
-    justify-content: space-around;
-    align-items: center;
-    
-   
-    
-}
-.imh:hover{
-    transform: scale(1.2);
-}
-.mar{
-    border-bottom: 2px solid rgb(194, 175, 175);
-    opacity: 10px;
-}
+
 .task{
-    background-color: rgb(179, 160, 136);
+    background-color: grey;
+    color: antiquewhite;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
+.box{
+   
+    height: 210px;
+    width: 210px;
+    border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   gap: 450px;
+   border-radius: 40px;
+   margin-top: 40px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+.content :hover {
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+
+
+
+
 
