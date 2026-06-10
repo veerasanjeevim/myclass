@@ -32,3 +32,6 @@ html{
     gap: 10px;
     border: 1px solid black;
 }
+.butt h1:hover{
+    background-color: aqua;
+}
