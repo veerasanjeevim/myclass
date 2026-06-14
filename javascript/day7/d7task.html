@@ -1,0 +1,82 @@
+<script>
+    let num=[1,2,3,5]
+    //missing numbers
+    let n=5
+    let exceptedsum=n*(n+1)/2;
+    let actualsum=0
+
+    for(j=0;j<num.length;j++){
+      actualsum+=num[j]
+
+    }
+    let missingnum=exceptedsum-actualsum
+    console.log(missingnum)
+    //non repeatedproggrame
+
+    let n1="programming"
+
+    for(i=0;i<n1.length;i++){
+        if(n1.indexOf(n1[i])===n1.lastIndexOf(n1[i])){
+            console.log(n1[i])
+            break;
+
+        }
+    }
+   let java="javascript"
+   for(let i=0;i<java.length;i++){
+    if(java.indexOf(java[i])!==java.lastIndexOf(java[i])){
+    console.log(java[i],"is  the repeated word")
+     break;
+}
+let arr=[1,2,0,4,5,0]
+let zerocount=0;
+let nonzero=[]
+
+for(i=0;i<arr.length;i++){
+    if(arr[i]!==0){
+        nonzero.push(arr[i])
+    }else{
+        zerocount++
+    }
+   
+}
+   for(j=0;j<zerocount;j++)
+    {
+        nonzero.push(0)
+    }
+    console.log(nonzero)
+
+}
+let jokers=["vijay","ajith","suriya","dhanush"]
+let count={};
+
+for(i=0;i<jokers.length;i++){
+    let name=jokers[i]
+    if(count[name]){
+       count[name]=count[name]+1
+    }
+    else{
+        count[name]=1
+    }
+}
+console.log(count)
+let maxCount = 0;
+let result = null;
+
+// count frequencies
+for (let i = 0; i < arr.length; i++) {
+    let num = arr[i];
+
+    if (count[num]) {
+        count[num]++;
+    } else {
+        count[num] = 1;
+    }
+
+    // track max
+    if (count[num] > maxCount) {
+        maxCount = count[num];
+        result = num;
+    }
+}
+</script>
