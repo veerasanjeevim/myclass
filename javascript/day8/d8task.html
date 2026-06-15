@@ -1,0 +1,89 @@
+<script>
+  let movies=["GOAT","Leo","Master"]
+  movies.push("ghili");
+  console.log(movies)
+  movies.pop();
+  console.log(movies)
+  let heroes=["vijay","suriya","sk"]
+  heroes.unshift("ajith");
+   console.log(heroes)
+   heroes.shift();
+   console.log(heroes)
+// fruit
+   let fruit=["Apple","Mango","Orange"]
+   fruit.push("banana","grapes")
+  console.log(fruit)
+  fruit.pop()
+  console.log(fruit)
+  fruit.unshift("pineapple")
+  fruit.shift()
+  console.log(fruit)
+  //student
+  const stud=
+    {
+   name:"Sudhan",
+   course:"MERN",
+   city:"Chennai"
+}
+  console.log(stud.name,"student name")
+  console.log(stud["name"],"using bracket")
+  //mpbile store
+  const mobileshop=[
+        {
+            mobile:"vivov29",
+            price:"20000"
+        },
+        {
+            mobile:"oppof29",
+            price:25000
+        },
+        {
+            mobile:"vivof29",
+            price:65000
+        },
+  ]
+  for(i=0;i<mobileshop.length;i++){
+    console.log(mobileshop[i].mobile+"-"+mobileshop[i].price)
+  }
+  const movies1=
+
+  [
+   {
+      movie:"GOAT",
+      collection:800
+   },
+
+   {
+      movie:"Leo",
+      collection:600
+   },
+
+   {
+      movie:"Master",
+      collection:500
+   }
+
+  ]
+  let totalcollection=0
+  let highestcollection=0
+  let highmovie="";
+  for(j=0;j<movies1.length;j++){
+    totalcollection+=movies1[j].collection
+ if(movies1[j].collection>highestcollection){
+    highestcollection=movies1[j].collection
+    highmovie=movies1[j].movie
+
+ }
+
+
+  }
+  
+
+ console.log(totalcollection)
+  console.log(highestcollection)
+  console.log(highmovie)
+  
+
+
+
+</script>
