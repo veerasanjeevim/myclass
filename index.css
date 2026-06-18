@@ -44,47 +44,14 @@
     transform: scale(1.2);
     overflow: hidden;
 }
- *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        .carousel{
-            width:80%;
-            height:400px;
-            margin:40px auto;
-            overflow:hidden;
-            border-radius:10px;
-        }
-
-        .slides{
-            display:flex;
-            width:300%;
-            animation:slide 12s infinite;
-        }
-
-        .slides img{
-            width:100%;
-            height:400px;
-            object-fit:cover;
-        }
-
-        @keyframes slide{
-            0%,30%{
-                transform:translateX(0);
-            }
-            35%,65%{
-                transform:translateX(-100%);
-            }
-            70%,100%{
-                transform:translateX(-200%);
-            }
-        }
-
-
-
-
-
-
-
+.bdy{
+    background-color: rgb(136, 130, 130);
+}
+#butt{
+      transition:0.3s;
+}
+#butt:hover{
+ 
+    transform:scale(1.1);
+   
+}

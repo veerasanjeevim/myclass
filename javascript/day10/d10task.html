@@ -1,0 +1,87 @@
+<script>
+    let hero="vijay"
+    let run=()=>{
+        console.log(hero)
+    }
+    run()
+
+    if(hero=="vijay"){
+        console.log(hero,"inside an if block")
+    }else{
+        
+    }
+    for(i=0;i<2;i++){
+        console.log(hero,"accesing on for loop")
+    }
+   
+    const movie = ()=>{
+   let collection = 800;
+   return collection
+   
+}
+console.log(movie())
+console.log("printed using return statement")
+if(true){
+
+   var actor1 = "Ajith";
+
+   let actor2 = "Vijay";
+   
+
+}
+console.log(actor1)
+console.log("actor 2 cannot be displyed because it accesible only inside block")
+
+function showmovie(){
+    console.log("THE GOAT")
+}
+showmovie()
+ const add = (a,b)=>{
+    let add=a+b
+    console.log(add,"displayed and added using two two arguments")
+
+}
+add(10,57)
+function processBooking(callback) {
+    callback();
+}
+
+processBooking(() => {
+    console.log("Booking Confirmed");
+});
+setTimeout=(()=>{
+    console.log("booking confirmed")
+},2000)
+//processorder
+function processOrder(callback) {
+    console.log("Order Received");
+    callback();
+}
+
+function deliverOrder() {
+    console.log("Order Delivered");
+}
+
+processOrder(deliverOrder);
+//balance
+let initialbalance=5000;
+const deposit=(dep)=>{
+   let abal= initialbalance+=dep
+   console.log(abal,"is new balance")
+   
+
+   
+}
+const withdraw=(fetch)=>{
+    let bal= initialbalance-=fetch
+    console.log(bal,"is the new amount after fetched")
+    
+      
+
+} 
+
+
+ deposit(2000)  
+withdraw(300)
+
+</script>

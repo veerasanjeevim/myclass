@@ -5,7 +5,7 @@
 }
 body{
     
-    
+    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
@@ -30,6 +30,9 @@ html{
     
     margin-left: 150px;
     text-decoration: none;
+    .nav3 a{
+        text-decoration: none;
+    }
    
 }
 .nav3 button{
@@ -113,12 +116,7 @@ html{
     justify-content: space-around;
     background-color: rgba(73, 136, 136, 0.705);
 }
-.t{
-    
-   
-   
-    display: flex;
-    flex-direction: column;
+
 
     
     
@@ -134,11 +132,35 @@ html{
 }
 .n1:hover{
     transform: scale(1.1);
+    overflow-y: hidden;
+
     
 }
 .nav3 a:hover{
     background-color: rgb(112, 117, 221);
 }
 .nav3 button:hover{
-    transform: scale(1.2);
+    transform: scale(1.0);
+}
+
+.footer{
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    background:#222;
+    color:white;
+    padding:30px 50px;
+   
+}
+
+.footer-col{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+     margin-right:60px ;
+}
+
+.social{
+    flex-direction:row;
 }
