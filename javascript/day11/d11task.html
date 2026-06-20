@@ -1,0 +1,172 @@
+<script>
+
+
+
+    let name="veerasanjeevi"
+    console.log(name,"before updating")
+     name="sanjeevi"
+     console.log(name,"is the new updated name")
+
+  //outside block var
+  
+  if(true){
+    let run="running"
+   
+  }
+  console.log("reference caught eror,not accesible ")
+  //changing const value
+ const coursename="java";
+  //coursename="javascript"
+  //console.log(coursename)
+  console.log("const is not changable,because its a fixed one")
+//arrow function
+let greet=()=>{
+    console.log("welcome to java script---via arrow func")
+}
+//
+let arrwithpar=(yourname)=>{
+    console.log(yourname,"run via parameter of arropw function")
+
+}
+arrwithpar("veerasanjeevi")
+//arrow adiition
+
+let calculator=(a,b)=>{
+    let result=a+b
+    console.log(result,"is the added value")
+
+}
+calculator(5,9)
+
+//template literals
+let hero=["vijay"]
+console.log(`${hero} is the my favourite hro and it is printed using template`)
+//aray destructing
+let hero1=["vijay","ajith","surya","ramcharn"]
+let [a,b,c,d]=hero1
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)
+console.log("printed using destructing")
+//object destructing
+const cdet=
+    {
+   name2:"Sudhan",
+   course:"MERN",
+   city:"Chennai"
+}
+let{name2, city}=cdet
+console.log(name2,city,"extracted using object destructing")
+//spread operator
+const cours=["HTML","CSS","JavaScript"]
+
+console.log(cours,"is the array before edit")
+let copy=[...cours]
+ copy[3]="recat"
+ console.log(copy,"is the array after updated react")
+ //merging spread
+ let her1=["suriya","vijay"]
+ let her2=["dhanush","simbu"]
+
+ let connectheros=[...her1,...her2]
+
+ console.log(connectheros,"click for the merged array using spread")
+ //spread operatorin object
+
+let car={
+    car1:"hyundai",
+    car2:"ford",
+    car3:"lambhoghini"
+ }
+ console.log(car,"before spreding")
+ let carslect={...car}
+ carslect.car2="bugatti"
+ console.log(carslect,"after spreading")
+
+//rest parameter
+//finding totAL SUM
+function total(...numbers){
+    let sum=0;
+    for(let num of numbers){
+        sum+=num
+        
+    }
+     
+        return sum
+}
+console.log(total(10,20,30,50),"is the toal sum")
+//intermidiatelevel task
+let details={
+   name1:"Sudhan",
+   course:"MERN",
+   city2:"Chennai"
+}
+let {name1 ,course, city2}=details
+
+
+console.log(`student name :${name1}`)
+console.log(`course:${course}`)
+console.log(`city:${city2}`)
+//heroes merger
+let heroes1 = [
+   "Vijay",
+   "Ajith"
+];
+
+let heroes2 = [
+   "Suriya",
+   "SK"
+];
+
+let allheroes=[...heroes1,...heroes2]
+
+let herofunc=()=>{
+    let allheroes=[...heroes1,...heroes2]
+
+    for(i=0;i<=allheroes.length-1;i++){
+        console.log(allheroes[i],"printed using function and for loop")
+    }
+
+}
+herofunc()
+//
+var total=0;
+let moviecollect=(...collections)=>{
+    for(let m of collections){
+        total+=m
+    }
+   
+ 
+}
+
+moviecollect(  500,
+   800,
+   300,
+   700)
+console.log(`${total} is the total collection of movies`)
+//
+ 
+const employee = {
+
+   name:"Rahul",
+
+   department:"IT",
+
+   salary:30000
+
+};
+const exp={
+    experience:"2 years",
+}
+
+let totaldet={...employee,...exp}
+
+console.log(totaldet,"is the new updated details using spread operator")
+
+
+
+
+   
+
+</script>
