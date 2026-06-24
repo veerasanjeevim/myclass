@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <script>
+        let show=()=>{
+            let txt=document.getElementById("val")
+            let nam=document.getElementById("name")
+             nam.innerText=txt.value
+
+        }
+         
+    </script>
+    
+    <h2 id="name" class="bg-green-300 p-5  b-4 text-red-500 text-xl"></h2>
+    <input type="text" id="val" style="border: 3px solid black;"  >
+    <button onclick="show()" class="border-2 p-2">click</button>
+
+    <p class="flex items-center justify-center">next task------------------------</p>
+    <script>
+        let vanish=()=>{
+            let pr=document.getElementById("par")
+            pr.innerText=""
+        }
+    </script>
+
+    <p id="par" class="bg-green-300 p-10 border-4 border-black-500 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates consequuntur laboriosam dicta odio delectus, illum impedit voluptatem illo, velit excepturi similique soluta quae nobis, sunt placeat non quos sapiente vero facere voluptate nemo sit? Ducimus quisquam dolor similique dolorem consequatur quod iusto! Reprehenderit eum aut nulla, ipsa incidunt excepturi?</p>
+   <button onclick="vanish()" class="border-2 mt-4 p-2">click here to hide</button>
+   <p class="flex items-center justify-center">next task------------------------</p>
+
+   <script>
+            let magic=()=>{
+            
+            let pr=document.getElementById("par")
+          pr.style.display="block"
+        }
+   </script>
+      
+       <p id="par" class="bg-violet-300 p-10 border-4 border-black-500  " style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates consequuntur laboriosam dicta odio delectus, illum impedit voluptatem illo, velit excepturi similique soluta quae nobis, sunt placeat non quos sapiente vero facere voluptate nemo sit? Ducimus quisquam dolor similique dolorem consequatur quod iusto! Reprehenderit eum aut nulla, ipsa incidunt excepturi?</p>
+   <button onclick="magic()" class="border-2 mt-4 p-2">click here to show</button>
+    <p class="flex items-center justify-center">next task------------------------</p>
+   <script>
+      let toggle=()=>{
+        let pr3=document.getElementById("pr1")
+        if(pr3.style.display=="none"){
+            pr3.style.display="block"
+        }else{
+            pr3.style.display="none"
+        }
+      }
+   </script>
+   <p  id="pr1" class="bg-orange-300 p-10 border-4 border-black-500  " style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem laboriosam et necessitatibus doloribus non nemo illo veniam saepe iure nam voluptate unde sit, debitis sunt excepturi quaerat, ratione incidunt assumenda nihil soluta deleniti? Vero accusantium autem nihil mollitia, enim vitae consequuntur facilis, atque ducimus quasi recusandae. Rerum, corporis ea?</p>
+   <button onclick="toggle()" class="border-2 mt-4 p-2">click here to show</button>
+       <p class="flex items-center justify-center">next task------------------------</p>
+  <script>
+   
+   let subm=()=>{
+      let inp=document.getElementById("inp1")
+      let head=document.getElementById("h22")
+
+      if(inp.value==="admin"){
+        head.style.display="block"
+        head.innerText="congarts you are allowed"
+      }else{
+        head.style.display="block"
+        head.innerText="srry not acceptable"
+      }
+
+   }
+  </script>
+    <h2 id="h22" class="bg-violet-300 border-green-500 border-4" style="display: none;"></h2>
+    <input type="text" class="border-2 w-50 h-10" placeholder="plese enter your username" id="inp1">
+    <button onclick="subm()" class="border-2 mt-4 p-2">clicktosubmit</button>
+    <p class="flex items-center justify-center">next task------------------------</p>
+
+    <script>
+        let passcheck=()=>{
+            let inp3=document.getElementById("pass")
+            let heder=document.getElementById("h23")
+            if(inp3.value.length>8){
+                heder.style.display="block"
+                heder.innerText="yeah your passcode is strong"
+
+            }else{
+                heder.style.display="block"
+                heder.innerText="your passcode is weak"
+            }
+        }
+
+    </script>
+      <h2 id="h23" class="bg-violet-300 border-green-500 border-4" style="display: none;"></h2>
+    <input type="password" class="border-2 w-50 h-10" placeholder="plese enter your pass more than 8" id="pass">
+     <button onclick="passcheck()" class="border-2 mt-4 p-2">clickto check</button>
+      <p class="flex items-center justify-center">next task------------------------</p>
+      <script>
+        let fullname=()=>{
+            let n1=document.getElementById("fname")
+            let n2=document.getElementById("sname")
+            let res=document.getElementById("h24")
+            res.style.display="block"
+            res.innerText=n1.value+=n2.value
+            
+        }
+
+      </script>
+      <input type="text"  class="border-2 w-50 h-10" placeholder="plese enter your firstname" id="fname">
+      <input type="text"  class="border-2 w-50 h-10" placeholder="plese enter your secondname" id="sname">
+       <button onclick="fullname()" class="border-2 mt-4 p-2">clickto check</button>
+      <h2 id="h24" class="bg-violet-300 border-green-500 border-4 h-20 text-lg flex text-center " style="display: none;"></h2>
+<p class="flex items-center justify-center">next task------------------------</p>
+      <script>
+    let submitForm = () => {
+        let input = document.getElementById("inp");
+        let result = document.getElementById("msg");
+
+        if (input.value.trim() === "") {
+            result.innerText = "Please Enter Value";
+        } else {
+            result.innerText = "Form Submitted";
+        }
+    };
+</script>
+
+<h2 id="msg"></h2>
+
+<input
+    type="text"
+    id="inp"
+    class="border-2 p-2"
+    placeholder="Enter something">
+
+<button
+    onclick="submitForm()"
+    class="border-2 p-2 mt-2">
+    Submit
+</button>
+</body>
+</html>
