@@ -1,0 +1,266 @@
+<script>
+    const heroes = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+
+];
+
+let upper=heroes.map(hero=>hero.toUpperCase())
+console.log(upper,"is the upper case")
+//
+    const collections = [
+
+   100,
+
+   200,
+
+   300,
+
+   400
+];
+
+for(i=0;i<collections.length;i++){
+
+    let multi=collections[i]*10
+    console.log(multi,"is the value multiplied by 10")
+}
+
+let multiplyof10=collections.map(coll=>coll*10)
+    console.log(multiplyof10,"is the value multiplied by 10")
+//maping
+const movies = [
+
+   "GOAT",
+
+   "Leo",
+
+   "Master"
+];
+
+let added=movies.map(mov=>`movie:${mov}`)
+console.log(added,"is the movie prefix")
+//
+const collections2 = [
+
+   100,
+
+   500,
+
+   800,
+
+   200,
+
+   900
+];
+
+let greaterthan300=collections2.filter(coll=>coll>300 )
+
+console.log(greaterthan300,"are the collection greater than 300")
+const marks = [
+
+   35,
+
+   80,
+
+   20,
+
+   90,
+
+   45
+];
+let passstudent=marks.filter(mar=>mar>= 35)
+
+console.log(passstudent,"are the passed students mark")
+//
+const heroe = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "SK",
+
+   "Suriya"
+];
+let words4 =heroe.filter(her=>her.length>4)
+console.log(words4,"are the hero name contains more 4 words")
+//
+const hero = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+];
+
+let findajith=hero.find(fav=>fav=="Ajith")
+console.log(findajith)
+//
+const collections3 = [
+
+   100,
+
+   500,
+
+   800,
+
+   200
+];
+let fourhundred=collections3.find(four=>four>400)
+console.log(`collection greater than 400 are ${fourhundred}`)
+//
+const heroes3 = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+];
+let index=heroes3.findIndex(her=>her==="Suriya")
+console.log(index,"was the index of suriya")
+//leio
+const movies4 = [
+
+   "GOAT",
+
+   "Leo",
+
+   "Master"
+];
+let index2=movies4.findIndex(her=>her==="Leo")
+console.log(index2,"was the index of leooo")
+//if
+const marks5 = [
+
+   35,
+
+   80,
+
+   20,
+
+   90
+];
+let fail=marks5.some(her=>her>35)
+console.log(fail,"there is one person failled")
+//
+const collections6 = [
+
+   100,
+
+   200,
+
+   900
+];
+let collect=collections6.some(her=>her>800)
+console.log(collect,"there is one movie crossed 800")
+//
+const marks6 = [
+
+   50,
+
+   70,
+
+   90,
+
+   40
+];
+let pass=marks6.every(mar=>mar>=35)
+console.log(pass,"every student passed the exam")
+//
+const collections7 = [
+
+   100,
+
+   200,
+
+   300,
+
+   400
+];
+let totalcollection=collections7.reduce((acc,current)=>{
+       return acc+=current
+})
+console.log(totalcollection,"is the total coolection of movie")
+//
+const students = [
+
+   {
+      id:1,
+      name:"Sudhan"
+   },
+
+   {
+      id:2,
+      name:"Rahul"
+   }
+];
+let show=students.map(mov=>
+    console.log(mov.name,"was the name of students")
+)
+///
+const students9 = [
+
+   {
+      id:1,
+      age:20
+   },
+
+   {
+      id:2,
+      age:30
+   },
+
+   {
+      id:3,
+      age:18
+   }
+];
+let agecal=students9.filter(mov=>mov.age>=20
+ 
+
+)
+   console.log(agecal,"is the age more than 20") 
+//
+const students10 = [
+
+   {
+      id:1,
+      name:"Sudhan"
+   },
+
+   {
+      id:2,
+      name:"Rahul"
+   }
+];
+let findid=students.find(ids=> ids.id===2 )
+console.log(findid, "is the id contaion 2")
+//
+
+let hnumber=[100,500,800,200]
+
+let hnum=hnumber.reduce((acc,ret)=>{
+    return acc>ret? acc:ret
+})
+console.log(hnum)
+//
+let lnumber=[100,500,800,200]
+
+let lnum=lnumber.reduce((acc,ret)=>{
+    return acc<ret ?acc:ret
+})
+console.log(lnum)
+//even numb
+
+let enuum=[10,15,20,25,30]
+
+let evnum=enuum.filter(her=>her%2==0)
+
+console.log(evnum ,"are the even number")
+</script>
