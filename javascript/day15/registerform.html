@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <script>
+        let but=()=>{
+            let datacollection=[]
+            let username=document.getElementById("name").value
+            let usermail=document.getElementById("mail").value
+            let userpass=document.getElementById("pass").value
+ 
+            const datacollection1={username,usermail,userpass}
+            datacollection.push(datacollection1)
+            
+
+            localStorage.setItem("user",JSON.stringify(datacollection));
+
+            alert("registration succesfull")
+
+           console.log(localStorage.getItem("user"));
+           
+        }
+    </script>
+    <h1 class="flex justify-center item center bg-blue-500 p-10 text-lg rounded-lg text-white " >REGISTER FORM</h1>
+    <input type="text" placeholder="enter your name" class="h-10 w-70 border border-black-500 mt-4 ml-4"id="name">
+    <input type="email" placeholder="enter your email" class="h-10 w-70 border border-black-500 mt-4 ml-4" id="mail">
+    <input type="password" placeholder="enter your password" class="h-10 w-70 border border-black-500 mt-4 ml-4" id="pass">
+    <button  class="border border-black-500 w-25 h-10 bg-black text-white" onclick="but()">register</button>
+</body>
+</html>h
