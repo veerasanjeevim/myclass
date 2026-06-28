@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class=" bg-white" id="dark">
+    <script>
+        let action=()=>{
+            let inp=document.getElementById("inputtext")
+            let cnt=document.getElementById("count")
+              cnt.style.display="block"
+           
+             
+            inp.addEventListener("input",function(){
+                cnt.textContent="your count is"+inp.value.length
+            })
+        }
+        
+    </script>
+     <h1 style="display: none;" id="count"></h1>
+    <input type="text" placeholder="ENTER THE WORD TO COUNT" id="inputtext" class="h-10 w-35 border border-black-500">
+    <button onclick="action()">SUBMIT</button>
+
+    <p  class="flex justify-center">---------------next task------------</p>
+
+    <script>
+        let cal=()=>{
+        let age=document.getElementById("getage").value 
+        let h11=document.getElementById("print")
+
+        if(age<12){
+            h11.style.display="block"
+            h11.textContent="you are a child"
+        }else if(age>12 && age<22){
+            h11.style.display="block"
+            h11.textContent="yoou are youngster"
+
+        }else if(age>22 && age<40){
+            h11.style.display="block"
+            h11.textContent="you are middle age"
+
+        }else if(age>40){
+            h11.style.display="block"
+            h11.textContent="you are old age"
+        }
+    }
+        
+    </script> 
+    <h1 style="display: none;" id="print"></h1>
+    <input type="text" placeholder="ENTER YOUR AGE" id="getage" class="h-10 w-55 border border-black-500">
+     <button onclick="cal()">submit</button>
+      <p  class="flex justify-center">---------------next task------------</p>
+    <button class="h-12 w-30 border border-black-500 bg-black text-white" onclick="switchh()" id="but">darkmodeonoff</button> 
+    
+    
+  
+    <script>
+           let darker=false
+        let switchh=()=>{
+            let buton=document.getElementById("but")
+            let dark1=document.getElementById("dark")
+        
+        if(darker===false){
+            dark1.classList.remove("bg-white")
+            dark1.classList.add("bg-black")
+            buton.classList.remove("bg-black","text-white")
+            buton.classList.add("bg-white","textblack")
+
+              darker=true
+        }
+         else{
+              dark1.classList.remove("bg-black")
+            dark1.classList.add("bg-white")
+            buton.classList.remove("bg-white","text-black")
+            buton.classList.add("bg-black","text-white")
+             darker=false
+         }
+         
+           }
+           </script>
+    
+           <p  class="flex justify-center">---------------next task------------</p> 
+      <h1 id="show" class="bg-black text-white flex justify-center items-center"></h1>
+     <input type="text" placeholder="ENTER THE number of ticket" class="h-10 w-55 border border-black-500" id="nt">
+     <button  class="h-10 w-30 border border-black-500" onclick="ticketrate()">submit</button>
+    
+   <script>
+    let ticketrate=()=>{
+        let nticket=document.getElementById("nt").value
+        let frame=document.getElementById("show")
+        let totalprice=150*nticket
+        frame.textContent="total price is :"+totalprice
+   
+    }
+   </script>
+   <br>
+   <section>
+   <input type="text" placeholder="ENTER THE hero name to find" class="h-10 w-55 border border-black-500 mt-10" id="hname">
+    <button  class="h-10 w-30 border border-black-500" onclick="heronamefind()">submit</button>
+    <h1 class="bg-white  text-black" id="show"></h1>
+    <script>
+        let heronamefind=()=>{
+            let herolist=["vijay","ajith","surya","dhanush"]
+            let hinp=document.getElementById("hname").value
+            let result=document.getElementById("show")
+            if(herolist.includes(hinp)){
+               result.innerText="yeah your hero is vailable"
+            }else{
+                result.innerText="srry your hero is not vailable"
+            }
+        }
+    </script>
+    </section>
+    <section>
+        <input type="text" placeholder="ENTER THE number to check luck" class="h-10 w-55 border border-black-500 mt-10" id="lnuminp">
+    <button  class="h-10 w-30 border border-black-500" onclick="lnumfind()">submit</button>
+    <h1 class="bg-white  text-black" id="find"></h1>
+    <script>
+        let lnumfind=()=>{
+          let inp=parseInt(document.getElementById("lnuminp").value)
+          let showluck=document.getElementById("find")
+          let luckynumber=[7,14,21,27]
+
+            if(luckynumber.includes(inp)){
+                showluck.innerText="yes this is a lucky number"
+            }else{
+                showluck.innerText="srry bro this not a lucky one"
+            }
+
+            
+        }
+    </script>
+
+    </section>
+    <section>
+        <input type="text" placeholder="enter the product" class="h-10 w-55 border border-black-500 mt-10" id="pname">
+        <input type="text" placeholder="enter the quantity"class="h-10 w-55 border border-black-500 mt-10" id="pquantiy">
+        <button  onclick="findprice()">find price</button>
+        <h1 class=" text-black h-20" id="showpname" ></h1>
+         <h1 class=" text-black h-20" id="showquantity1"  ></h1>
+          <h1 class=" text-black h-20" id="showtotal" ></h1>
+      <script>
+        let findprice=()=>{
+          let inp1=document.getElementById("pname").value
+          let inp2=parseInt(document.getElementById("pquantiy").value)
+          let price=20000
+
+          let showproduct=document.getElementById("showpname")
+          if(showproduct==="mobile"){
+         
+          showproduct.innerText=("product: "+inp1)}
+          else{
+            showproduct.innerText="only mobile is available please type mobile"
+          }
+
+          let showquantity=document.getElementById("showquantity1")
+          
+          showquantity.innerText=("quantity: "+inp2)
+
+          let totalprice=document.getElementById("showtotal")
+         
+          let totalprice1=inp2*price
+          totalprice.innerText="total price:"+totalprice1
+        }
+     </script>
+     </section>
+     <section>
+      <button onclick="generatequote()">click to generate</button>
+      <h1 id="show" class="bg-black text-white"></h1>
+      <script>
+        let generatequote=()=>{
+            let quote=["old is gold","blood is thicker than wood","pen is mightier than sword","no pain no gain"]
+                let randomnumber =
+      Math.floor(
+      Math.random() * quote.length
+      )
+ let showquote=document.getElementById("show")
+        showquote.innerText=quote[randomnumber]
+        }
+       
+      </script>
+</section>
+
+</body>
+
+</html>
